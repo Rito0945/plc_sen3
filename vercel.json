@@ -1,8 +1,15 @@
 {
   "version": 2,
-  "functions": {
-    "api/plc_estate/index.php": {
-      "runtime": "vercel-php@latest"
+  "builds": [
+    {
+      "src": "api/index.php",
+      "use": "@vercel/static"
     }
-  }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/api/index.php"
+    }
+  ]
 }
