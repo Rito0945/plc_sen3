@@ -1,0 +1,8 @@
+{
+  "version": 2,
+  "functions": {
+    "api/plc_estate/index.php": {
+      "runtime": "vercel-php@1.0.0"
+    }
+  }
+}
